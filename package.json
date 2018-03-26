@@ -1,0 +1,8 @@
+{
+  "name": "application",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.16.3",
+    "twilio": "^3.14.0"
+  }
+}
