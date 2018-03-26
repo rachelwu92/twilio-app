@@ -2,6 +2,8 @@
  * Created by rachelwu on 3/25/18.
  */
 
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 
@@ -15,8 +17,8 @@ app.listen(4567, function() {
 });
 
 // Twilio Credentials
-const accountSid = '****';
-const authToken = '****';
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH;
 
 // require the Twilio module and create a REST client
 const client = require('twilio')(accountSid, authToken);
