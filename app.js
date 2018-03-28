@@ -26,8 +26,7 @@ const client = require('twilio')(accountSid, authToken);
 client.messages.create({
     to: '+18188577798',
     from: '+14158517345',
-    body: 'Thanks for your order! On a scale of 1-10 would you recommend ' +
-    'Sheraton SF to a friend? Reply with the number 1 to 10 to this message.',
+    body: 'Thank you for staying at the Sheraton Petaluma! Would you recommend us to a ' +
+        'friend?  Please reply with YES or NO.',
 })
-// .then(message => console.log(message.sid));
     .then(message => console.log(message.sid));
